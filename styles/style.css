@@ -1,0 +1,36 @@
+body {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+h2 {
+  position: absolute;
+  text-shadow: 1px 1px 10px white;
+}
+
+.loading {
+  width: 300px;
+  height: 300px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  animation: moving infinite 1s linear;
+}
+
+@keyframes moving {
+  from {
+    border-top: 10px solid white; 
+    border-bottom: 10px solid white; 
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
